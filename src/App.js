@@ -9,9 +9,10 @@ const projects = [
     tech: "React Native, FastAPI, EC2, AWS RDS, state of the art LLMs, Docker, Kubernetes, Prometheus/Grafana, OCR, Ansible, Terraform, MLOps",
     highlights: [
       "93.04% accuracy with LLM-as-a-judge methodology",
-      "Mobile app with OCR for real-time safety insights",
+      "Designed Mobile application with OCR for real-time safety insights",
       "CI/CD and MLOps deployment with Prometheus monitoring"
-    ]
+    ], 
+    link: "https://github.com/aakankshagupta18/klean_backend"
   },
   {
     title: "Enterprise ETL Pipeline for ML Forecasting",
@@ -21,27 +22,41 @@ const projects = [
     highlights: [
       "Auto-synced data ingestion with schema mapping",
       "Airflow workflows with monitoring and alerting", 
-      "Data collected eventually used for sales forecasting via ML models"
+      "Data collected eventually used for sales forecasting", 
+      "Designed React based web application for real-time tracking of data"
+    ]
+  },
+   {
+    title: "LLM powered Customer Support Portal-POC",
+    company: "Hitachi Digital Services",
+    period: "July 2024-Dec 2024",
+    tech: "Javascript, SAP provided LLM models, Service Orders(SAP)",
+    highlights: [
+      "Designed a customer portal using React/Redux/Nodejs", 
+      "Used SAP-hosted LLM models to identify sentiment, summarization and autogenerating reply",
+      "Creating service order in backend SAP"
     ]
   },
   {
-    title: "VS Code Extensions for SAP DevOps",
+    title: "SAP Fiori Tools Team VSCode Extensions",
     company: "SAP Labs",
     period: "June 2022–June 2023",
     tech: "React/Redux, Typescript, Node.js, Docker, Jenkins, MS Azure",
     highlights: [
-      "Improved SAP Guided Development for 1M+ users",
+      "Supported/Implemented fixes/new features for SAP VSCODE Extensions",
+      "Improved scalability for 1M+ users",
       "Created tutorial discovery extension",
       "Integrated telemetry for UX insights"
-    ]
+    ],
+     link: 'https://github.com/SAP/guided-development' 
   },
   {
     title: "Pacific Ocean Phosphate Analysis Platform",
     company: "San Jose State University",
     period: "2021–2022",
-    tech: "WebSockets, Docker, AWS (RDS, Aurora, Lambda)",
+    tech: "WebSockets, Docker, AWS (RDS, Lambda, API Gateway)",
     highlights: [
-      "Sensor data collection via Raspberry Pi",
+      "Sensor data collection via Raspberry PI",
       "Dockerized RESTful backend",
       "Event-driven AWS architecture"
     ]
@@ -56,6 +71,7 @@ const projects = [
       "Reduced delays by 40%",
       "Won Infosys Ace Award"
     ]
+   
   }
 ];
 
@@ -95,6 +111,7 @@ function App() {
             <ul>
               {project.highlights.map((point, i) => <li key={i}>{point}</li>)}
             </ul>
+            {project.link ? <a href={project.link}>Github Link</a> : <></>}
           </div>
         ))}
       </section>
