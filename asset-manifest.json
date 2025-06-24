@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/agupta-portfolio/static/css/main.0fbdd213.css",
+    "main.js": "/agupta-portfolio/static/js/main.f42012e6.js",
+    "static/js/453.6a25e6e6.chunk.js": "/agupta-portfolio/static/js/453.6a25e6e6.chunk.js",
+    "index.html": "/agupta-portfolio/index.html",
+    "main.0fbdd213.css.map": "/agupta-portfolio/static/css/main.0fbdd213.css.map",
+    "main.f42012e6.js.map": "/agupta-portfolio/static/js/main.f42012e6.js.map",
+    "453.6a25e6e6.chunk.js.map": "/agupta-portfolio/static/js/453.6a25e6e6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0fbdd213.css",
+    "static/js/main.f42012e6.js"
+  ]
+}
